@@ -1,24 +1,50 @@
 html body {
+  box-sizing: border-box;
+  height: 100vh;
   padding: 0px;
   margin: 0px;
   font-size: calc(1.125rem + (20 - 18) * ((100vw - 375px) / (1440 - 375)));
   font-family: Helvetica, sans-serif;
   background-color: white;
 }
-
+.wrapper {
+  min-height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
 
 .header {
   background-color: rgb(236, 2, 42);
   height: 160px;
-  padding-left: 60px;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: sticky;
+  top: 0;
+  z-index:9999;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.headerText {
+  color: rgb(240, 240, 240);
+  width: 80px;
+  font-size: 25px;
+  margin-left: 15px;
+  font-weight: 800;
+}
+.headerDivider {
+  color: rgb(250, 250, 250);
+  font-size: 25px;
+  font-weight: 100;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 
 .body {
   padding: 60px;
+  flex-grow: 1;
 }
 .headlineTitle {
   font-size: 80px;
@@ -43,4 +69,40 @@ html body {
 
 .audioPlayer {
   height: 100px;
+}
+
+
+.bodyText {
+  margin-top: 35px;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+
+.footer {
+  background-color: rgb(240, 240, 240);
+  height: 160px;
+  width: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.navWrapper {
+  height: 100%;
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+}
+.navLink {
+  display: flex;
+  text-decoration: none;
+  flex-grow: 1;
+  flex-shrink: 1;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 0 40px;
+  color: black;
+  border: 1px solid rgb(60,60,60);
+  box-sizing: border-box;
 }
