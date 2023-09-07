@@ -30,7 +30,7 @@ setInterval(() => {
     audioPlayer.querySelector(".current").textContent = getTimeCodeFromNum(
       audio.currentTime
     );
-  }, 10);
+  }, 50);
 
 //toggle between playing and pausing on button click
 const playBtn = audioPlayer.querySelector(".play-pause");
