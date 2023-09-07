@@ -23,7 +23,6 @@ timeline.addEventListener("click", e => {
 }, false);
 
 //check audio percentage and update time accordingly
-
 setInterval(() => {
     const progressBar = audioPlayer.querySelector(".progress");
     progressBar.style.width = audio.currentTime / audio.duration * 100 + "%";
