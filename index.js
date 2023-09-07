@@ -27,10 +27,11 @@ timeline.addEventListener("click", e => {
 setInterval(() => {
     const progressBar = audioPlayer.querySelector(".progress");
     progressBar.style.width = audio.currentTime / audio.duration * 100 + "%";
+    console.log(audio.currentTime, audio.duration, audio.currentTime / audio.duration * 100 + "%")
     audioPlayer.querySelector(".current").textContent = getTimeCodeFromNum(
       audio.currentTime
     );
-  }, 50);
+  }, 10);
 
 //toggle between playing and pausing on button click
 const playBtn = audioPlayer.querySelector(".play-pause");
