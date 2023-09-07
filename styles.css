@@ -49,15 +49,64 @@ html body {
 .headlineTitle {
   font-size: 80px;
   opacity: 0.8;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .headlineByline {
-  font-size: 50px;
+  font-size: 40px;
   opacity: 0.5;
   font-weight: 100;
   margin: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   padding: 0px;
+}
+
+
+.audioContainer {
+  box-sizing: border-box;
+  height: 450px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 6, 0.08) 4px 4px 10px 0px, rgba(0, 0, 6, 0.08) 0px 0px 2px 0px;
+  padding: 90px 50px;
+}
+.audioHeadline {
+  font-weight: 800;
+  font-size: 4.5vw;
+  margin-bottom:25px;
+  opacity: 0.9;
+}
+.audioByline {
+  font-size: 3.2vw;
+  opacity: 0.8;
+}
+.player {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle-play {
+  height: 70px;
+  width: 70px;
+}
+.timeline {
+  border-radius: 10px;
+  height: 20px;
+  width: calc(100% - 70px - 20px);
+  background-color: rgb(227, 227, 227);
+  float: right;
+}
+.current {
+  font-size: 3.2vw;
+  float:left;
+  margin-top: 40px;
+}
+.length {
+  font-size: 3.2vw;
+  float:right;
+  margin-top: 40px;
 }
 
 .imgBox {
@@ -75,7 +124,7 @@ html body {
 
 .bodyText {
   margin-top: 35px;
-  font-size: 40px;
+  font-size: 3vw;
   opacity: 0.5;
 }
 
@@ -99,7 +148,7 @@ html body {
   text-align: center;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 3.2vw;
   padding: 0 40px;
   font-weight: 800;
   color: #000006;
