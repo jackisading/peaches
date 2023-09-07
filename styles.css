@@ -18,7 +18,7 @@ html body {
 }
 
 .header {
-  /* background-color: rgb(236, 2, 42); */
+  background-color: rgb(236, 2, 42);
   height: 160px;
   display: flex;
   align-items: center;
@@ -26,8 +26,6 @@ html body {
   position: sticky;
   top: 0;
   z-index:9999;
-  flex-grow: 0;
-  flex-shrink: 0;
 }
 .headerText {
   color: rgb(240, 240, 240);
@@ -47,7 +45,6 @@ html body {
 
 .body {
   padding: 60px;
-  flex-grow: 1;
 }
 .headlineTitle {
   font-size: 80px;
@@ -78,7 +75,7 @@ html body {
 
 .bodyText {
   margin-top: 35px;
-  font-size: 30px;
+  font-size: 40px;
   opacity: 0.5;
 }
 
@@ -87,8 +84,6 @@ html body {
   background-color: rgb(240, 240, 240);
   height: 160px;
   width: 100%;
-  flex-grow: 0;
-  flex-shrink: 0;
 }
 .navWrapper {
   height: 100%;
@@ -104,7 +99,7 @@ html body {
   text-align: center;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 40px;
   padding: 0 40px;
   color: black;
   border: 1px solid rgb(60,60,60);
