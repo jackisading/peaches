@@ -1,5 +1,5 @@
 const audioPlayer = document.querySelector(".audioContainer");
-const audio = new Audio("923 Broadway.mp3");
+const audio = new Audio("intro.m4a");
 console.dir(audio);
 
 // set the correct audio length
