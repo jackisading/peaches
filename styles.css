@@ -128,9 +128,10 @@ html body {
 
 
 .bodyText {
-  margin-top: 45px;
   font-size: clamp(20px, 5vw, 35px);
   opacity: 0.5;
+  padding: 50px;
+  box-sizing: border-box;
 }
 
 
